@@ -50,7 +50,7 @@ const SearchBar = () => {
             <input
               type="search"
               placeholder="Seach for Notes"
-              className="ml-3 w-full bg-[#374151] text-white"
+              className="ml-3 w-full bg-[#374151] text-white outline-none"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

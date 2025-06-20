@@ -5,7 +5,7 @@ import { MdOutlineFileUpload } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUserData, setUserData } from "../Redux/slices/user-slice";
-
+import { toast } from "react-toastify";
 const Navbar = () => {
 
   const dispatch = useDispatch();
@@ -35,7 +35,10 @@ const Navbar = () => {
           <Link to="/about">
             About
           </Link>
-
+          <Link to="/faq">
+            faq
+          </Link>
+          
           {/* Conditional Rendering */}
           {isAuthenticated ? (
             <>

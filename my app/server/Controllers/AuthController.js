@@ -7,7 +7,6 @@ const cloudinary = require("cloudinary");
 
 dotenv.config();
 
-const router = express.Router();
 
 const storage = multer.memoryStorage();
 var upload = multer({
@@ -66,6 +65,7 @@ const signup = async (req, res) => {
     }
 };
 
+// login route
 const login = async (req, res) => {
     try {
         const { userEmail, userPassword } = req.body;

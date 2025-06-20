@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { setUserData } from "../Redux/slices/user-slice";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import toast from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
@@ -32,9 +32,9 @@ const Login = () => {
       else{
       console.log("User Logged in Successfully: ", result);
       dispatch(setUserData(result.data));
+      toast.success("Logged in successfully", { position: "top-center" });
       navigate("/");
       }
-
 
 
     } catch (error) {

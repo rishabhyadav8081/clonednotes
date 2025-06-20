@@ -21,10 +21,10 @@ const Footer = () => {
           </h2>
           <ul className="text-gray-600">
             <li className="mb-1">
-              <Link to="/about">About</Link>
+            <i><u> <Link to="/about">About</Link></u></i>
             </li>
             <li className="mb-1">
-              <Link to="/faq">FAQ</Link>
+            <i><u><Link to="/faq">FAQ</Link></u></i>
             </li>
           </ul>
         </div>
